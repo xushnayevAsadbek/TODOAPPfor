@@ -98,3 +98,36 @@ ul {
 .card__img{
     margin-right: 10px;
 }
+#modallayer{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.modalContent{
+    background-color:white;
+    padding: 100px;
+    border-radius: 10px;
+    box-shadow: 0 0 0 black;
+    animation: showModal 0.5s ease-in-out 1 ;
+}
+
+
+
+@keyframes showModal{
+    form{
+        transform: translateY(-100px);
+    }
+
+    to{
+        transform: translateY(0px);
+    }
+}
